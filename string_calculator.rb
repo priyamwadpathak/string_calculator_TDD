@@ -1,7 +1,8 @@
 class StringCalculator
 	def add(numbers)
-		if numbers.strip.empty?
-			return 0
-		end
+		return 0 if numbers.strip.empty?
+			
+		return numbers.strip.to_i if numbers.strip.length == 1
+
 	end
 end

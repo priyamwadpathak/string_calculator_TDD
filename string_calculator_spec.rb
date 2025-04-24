@@ -21,6 +21,6 @@ RSpec.describe StringCalculator do
 	end
 
 	it 'can handle newline and delimeters' do
-		expect(calculator.add('1\n2,3')).to eq(6)
+		expect(calculator.add("1\n2,3")).to eq(6)
 	end
 end
